@@ -1,0 +1,108 @@
+.main{
+    height: 100%;
+    margin-left: 85px;
+    position: relative;
+    z-index: 50;
+
+    .home{
+        width: 100%;
+        position: relative!important;
+        -webkit-transform: scale(1)!important;
+        transform: scale(1)!important;
+        opacity: 1;
+        visibility: visible;
+
+        &-top{
+
+            height: 50vh;
+            border-bottom: 1px solid #ebebeb;
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            .profile-picture{
+                width: 33.333%;
+                position: relative;
+                height: 50vh;
+                overflow: hidden;
+                
+                img{
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    margin: auto;
+                    -webkit-transform: scale3d(1,1,1);
+                    transform: scale3d(1,1,1);
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    transition: all 1s;
+                }
+            }
+
+            .profile-intro{
+                padding: 30px;
+                overflow: hidden;
+                padding: 0px 70px;
+                position: relative;
+                width: 66.66%;
+                height: 50vh;
+
+                .intro-content{
+                    -webkit-transform-origin: 0 0;
+                    transform-origin: 0 0;
+                    min-height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+
+                    .separador{
+                        position: relative;
+                        width: 100%;
+                        overflow: hidden;
+
+                        .loader{
+                            height: 7px;
+                            width: 30px;
+                            position: relative;
+                            background: #d6d6d6;
+                            margin-top: 15px;
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    .intro-cv{
+
+                        a{
+                            font-size: 20px;
+                            color: #b3b3b3;
+                            text-transform: uppercase;
+                            display: inline-block;
+                            overflow: hidden;
+                            margin-top: 17px;
+                            transition: all .8s;
+                            text-decoration: none;
+
+                            span{
+                                margin-top: 0;
+                                float: left;
+                                margin-right: 24px;
+                                font-size: 16px;
+                                padding-top: 17px;
+                            }
+
+                            &:hover{
+                                color: #1dbe6f;
+                                transition: all .8s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

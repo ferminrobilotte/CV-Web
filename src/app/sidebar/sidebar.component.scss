@@ -1,0 +1,34 @@
+.sidebar{
+    text-align: center;
+    background: #000;
+    z-index: 1000;
+    position: fixed;
+    width: 300px;
+    max-width: 100%;
+    height: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    width: 65px;
+
+    .menu{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        .listado{
+            margin-bottom: 60px;
+            list-style: none;
+            padding: 0px;
+    
+            .itemlist{
+                cursor: pointer;
+                font-size: 20px;
+                color: #1dbe6f;
+                margin-bottom: 11px;
+            }
+        }
+    }
+}
