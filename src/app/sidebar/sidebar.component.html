@@ -1,14 +1,19 @@
 <div class="sidebar">
+  <div class="logo">
+    <img src="../../assets/angular.png">
+  </div>
   <div class="menu">
 
     <ul class="listado">
-      <li class="itemlist">01</li>
-      <li class="itemlist">02</li>
-      <li class="itemlist">03</li>
+      <li [ngClass]="{'current': id === 1}" id="1" (click)="addClass(id=1)" class="itemlist">01</li>
+      <li [ngClass]="{'current': id === 2}" id="2" (click)="addClass(id=2)" class="itemlist">02</li>
+      <li [ngClass]="{'current': id === 3}" id="3" (click)="addClass(id=3)" class="itemlist">03</li>
     </ul>
 
-    <div class="social-media">
-      
+    <div class="logo">
+      <a href="https://www.linkedin.com/in/fermin-robilotte-82a889149/" target="_blank">
+        <img src="../../assets/58e91afdeb97430e81906504.png" style="height: 70px;">
+      </a>
     </div>
 
   </div>

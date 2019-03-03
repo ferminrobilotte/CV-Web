@@ -12,6 +12,18 @@
     padding: 15px;
     width: 100px;
 
+    .logo{
+        display: flex;
+        justify-content: center;
+        height: 150px;
+        overflow: hidden;
+
+        img{
+            flex: none;
+            height: 90px;
+        }
+    }
+
     .menu{
         position: absolute;
         bottom: 0;
@@ -25,10 +37,38 @@
     
             .itemlist{
                 cursor: pointer;
-                font-size: 20px;
+                font-size: 25px;
                 color: #1dbe6f;
                 margin-bottom: 11px;
+                transition: all .8s;
+                position: relative;
+
+                &::after{
+                    content: '';
+                    width: 42px;
+                    height: 7px;
+                    position: absolute;
+                    background-image: url(../../assets/arrow.png);
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    top: 10px;
+                    left: -65px;
+                    transition: all .3s;
+                }
             }
+
+            .current{
+                pointer-events: none;
+                color: #fff !important;
+
+                &::after{
+                    left: 29px;
+                }
+            }
+        }
+
+        .social-media{
+            color: blue;
         }
     }
 }

@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  id : number;
   constructor() { }
 
   ngOnInit() {
+    this.id = 1;
+  }
+
+  addClass(id: any) {
+    this.id = id;
   }
 
 }
