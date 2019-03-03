@@ -1,8 +1,10 @@
+
 .main{
     height: 100%;
-    margin-left: 85px;
     position: relative;
     z-index: 50;
+    float: right;
+    margin-left: 100px;
 
     .home{
         width: 100%;
@@ -45,7 +47,7 @@
             .profile-intro{
                 padding: 30px;
                 overflow: hidden;
-                padding: 0px 70px;
+                padding: 70px 70px;
                 position: relative;
                 width: 66.66%;
                 height: 50vh;
@@ -59,6 +61,29 @@
                     justify-content: center;
                     -webkit-backface-visibility: hidden;
                     backface-visibility: hidden;
+
+                    h1{
+                        font-size: 40px;
+                        color: #1dbe6f;
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                        position: relative;
+                    }
+
+                    h3{
+                        margin: 0px 0px 10px 0px;
+                        font-size: 20px;
+                        line-height: 16px;
+                        width: 100%;
+                    }
+
+                    p{
+                        margin: 0px 0px 10px 0px;
+                        font-size: 18px;
+                        color: #5c5c5c;
+                        font-weight: 300;
+                        line-height: 24px;
+                    }
 
                     .separador{
                         position: relative;
@@ -87,6 +112,14 @@
                             transition: all .8s;
                             text-decoration: none;
 
+                            i{
+                                height: 60px;
+                                width: 54px;
+                                float: left;
+                                margin-left: -10px;
+                                padding-top: 15px;
+                            }
+
                             span{
                                 margin-top: 0;
                                 float: left;
@@ -104,5 +137,159 @@
                 }
             }
         }
+
+        &-top:hover{
+            .profile-picture{
+
+                img{
+                    -webkit-transform: scale3d(1.1 ,1.1,1);
+                    transform: scale3d(1.1 ,1.1,1);
+                }
+            }
+        }
+
+        &-bottom{
+
+            height: 50vh;
+            border-bottom: 1px solid #ebebeb;
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            .cards-container{
+
+                .card{
+                    float: left;
+                    width: 33.33%;
+                    padding: 70px 70px;
+                    height: 50vh;
+                    
+                    .flex-content{
+                        -webkit-transform-origin: 0 0;
+                        transform-origin: 0 0;
+                        -webkit-backface-visibility: hidden;
+                        backface-visibility: hidden;
+
+                        .tittle{
+                            margin: 0;
+                            font-size: 30px;
+                            text-align: left;
+                            font-weight: 400;
+                            display: inline;
+                            text-transform: uppercase;
+                        }
+
+                        i{
+                            font-size: 80px;
+                            color: #9B9B9B;
+                            margin-right: 100%;
+                            margin-bottom: 20px;
+                        }
+
+                        .loader{
+                            height: 7px;
+                            width: 30px;
+                            position: relative;
+                            background: #d6d6d6;
+                            margin-top: 15px;
+                        }
+
+                        .arrow{
+                            position: relative;
+                            top: -13px;
+                            right: -26px;
+
+                            &::before{
+                                width: 10px;
+                                height: 1px;
+                                background: 0 0;
+                                position: absolute;
+                                top: 8px;
+                                left: 19px;
+                                content: '';
+                                transition: all .3s;
+                            }
+                            &::after{
+                                width: 0;
+                                height: 0;
+                                border-top: 8px solid transparent;
+                                border-bottom: 7px solid transparent;
+                                border-left: 11px solid #ccc;
+                                position: absolute;
+                                top: 1px;
+                                left: 23px;
+                                content: '';
+                                transition: all .3s;
+
+                            }
+                        }
+
+                        p{
+                            margin: 0;
+                            position: relative;
+                            font-size: 18px;
+                            text-align: left;
+                            display: block;
+                            color: #5c5c5c;
+                            font-weight: 300;
+                            margin-top: 15px;
+                            line-height: 26px;
+                        }
+                    }
+
+                    &:hover{
+
+                        .flex-content{
+
+                            i{
+                                color: #1dbe6f;
+                                transition: all .8s;
+
+                            }
+
+                            .arrow{
+
+                                &::before{
+                                    width: 27px;
+                                    transition: all .3s;
+                                    background: #1dbe6f;
+                                    left: 4px;
+                                }
+                                &::after{
+                                    border-left: 10px solid #1dbe6f;
+                                    left: 30px;
+                                    transition: all .3s;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                
+
+            }
+
+            .cards-container::before {
+                left: 33.333%;
+            }
+
+            .cards-container::after {
+                left: 66.666%;
+            }
+
+            .cards-container::after, .cards-container::before{
+                background-color: #ebebeb;
+                width: 1px;
+                height: calc(50vh + 1px);
+                bottom: 0;
+                position: absolute;
+                display: block;
+                content: '';
+                z-index: 555;
+                opacity: 1;
+                transition: all 1s;
+            }
+        }
+
     }
 }
