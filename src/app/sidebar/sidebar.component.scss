@@ -72,3 +72,32 @@
         }
     }
 }
+
+/* Media queries */
+
+@media (max-width: 575px) {
+    .sidebar {
+        padding: 0;
+        width: 50px;
+
+        .logo{
+            margin-top: 10px;
+            
+            img{
+                height: 50px;
+            }
+        }
+
+        .menu{
+
+            .listado{
+                
+                .current{
+                    &::after{
+                        left: 2px;
+                    }
+                }
+            }
+        }
+    }
+}

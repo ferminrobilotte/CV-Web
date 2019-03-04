@@ -100,3 +100,57 @@
         }
     }
 }
+
+/* Media queries */
+
+@media (max-width: 575px) {
+    .main{
+        width: calc(100vw - 50px);
+        height: 100vh;
+        left: 50px!important;
+        top: 0!important;
+        right: 0!important;
+        bottom: 0!important;
+        z-index: 999999;
+        margin-left: 0px 
+    }
+
+    .profile{
+        padding: 43px 0 !important;
+
+        &-content{
+            width: 100% !important;
+            overflow: hidden;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .header{
+
+            h2{
+                font-size: 35px !important;
+                margin-bottom: 40px !important;
+            }
+
+            p{
+                letter-spacing: normal;
+                font-size: 20px !important;
+            }
+        }
+
+        .list{
+
+            ul{
+
+                li{
+                    padding-left: 20px;
+                    text-align: left;
+                    font-size: 0;
+                }
+            }
+        }
+    }
+
+}
+
+
