@@ -1,25 +1,116 @@
 <div class="main">
-  <div class="profile" [ngClass]="{'inactive' : informationValue !== 1}">
-    <span> profile funciona</span>
+  <div [ngClass]="{'inactive' : informationValue !== 1, 'profile' : informationValue === 1}">
+    <div class="profile-content">
+        <div class="header">
+            <a href="../..//assets/CV Fermin Robilotte.pdf" target="_blank">
+                <span>Descargar CV</span>
+                <i class="fas fa-download"></i>
+            </a>
+            <h2>Perfil</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum corporis optio officia quis, 
+                libero eius id animi eum adipisci iste itaque unde maxime reiciendis facere totam impedit voluptatem omnis velit?</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li>DNI: 38531662</li>
+                <li>Fecha de nacimiento: 12/11/1995. 22 años.</li>
+                <li>Nacionalidad: Argentina</li>
+                <li>Número de teléfono: 2923-429900</li>
+                <li>Email: ferrobilotte@gmail.com</li>
+                <li>Linkedin: <a href="www.linkedin.com/in/fermin-robilotte-82a889149">Link</a></li>
+                <li>GitHub: <a href="www.github.com/ferminrobilotte">Link</a></li>
+            </ul>
+        </div>
+    </div>
   </div>
 
-  <div class="tech" [ngClass]="{'inactive' : informationValue !== 2}">
-      <span> tech funciona</span>
+  <div [ngClass]="{'inactive' : informationValue !== 2, 'profile' : informationValue === 2}">
+    <div class="profile-content">
+        <div class="header">
+            <a href="../..//assets/CV Fermin Robilotte.pdf" target="_blank">
+                <span>Descargar CV</span>
+                <i class="fas fa-download"></i>
+            </a>
+            <h2>Tecnologias</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum corporis optio officia quis, 
+                libero eius id animi eum adipisci iste itaque unde maxime reiciendis facere totam impedit voluptatem omnis velit?</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li>Lenguajes de programación, actualmente usando NodeJs, Angular, Javascript, Typescript.</li>
+                <li>Con conocimientos en Python, Java.</li>
+                <li>Manejo de Git. WebPack. Rest API.</li>
+                <li>Maquetado con HTML5, CSS3, SASS, Bootstrap.</li>
+                <li>Base de datos: SQL, MySql</li>
+            </ul>
+        </div>
+    </div>
   </div>
 
-  <div class="experience" [ngClass]="{'inactive' : informationValue !== 3}">
-      <span> experience funciona</span>
+  <div [ngClass]="{'inactive' : informationValue !== 3, 'profile' : informationValue === 3}">
+    <div class="profile-content">
+        <div class="header">
+            <a href="../..//assets/CV Fermin Robilotte.pdf" target="_blank">
+                <span>Descargar CV</span>
+                <i class="fas fa-download"></i>
+            </a>
+            <h2>Experiencia</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum corporis optio officia quis, 
+                libero eius id animi eum adipisci iste itaque unde maxime reiciendis facere totam impedit voluptatem omnis velit?</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li>Pasantía en SG-Argentina - Desarrollo y diseño web (Dic 2017-Mayo 2018)</li>
+                <li>Desarrollador FullStack LivePanel (Mayo 2018-Actualidad)</li>
+            </ul>
+        </div>
+    </div>
   </div>
 
-  <div class="education" [ngClass]="{'inactive' : informationValue !== 5}">
-      <span> education funciona</span>
+  <div [ngClass]="{'inactive' : informationValue !== 5, 'profile' : informationValue === 5}">
+    <div class="profile-content">
+        <div class="header">
+            <a href="../..//assets/CV Fermin Robilotte.pdf" target="_blank">
+                <span>Descargar CV</span>
+                <i class="fas fa-download"></i>
+            </a>
+            <h2>Educacion</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum corporis optio officia quis, 
+                libero eius id animi eum adipisci iste itaque unde maxime reiciendis facere totam impedit voluptatem omnis velit?</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li>Secundario escuela San José (Carhué) - Bachiller</li>
+                <li>Universidad nacional del Sur - Ingeniería en sistemas de información (2015-act)</li>
+            </ul>
+        </div>
+    </div>
   </div>
 
-  <div class="skills" [ngClass]="{'inactive' : informationValue !== 4}">
-      <span> skills funciona</span>
+  <div [ngClass]="{'inactive' : informationValue !== 4, 'profile' : informationValue === 4}">
+    <div class="profile-content">
+        <div class="header">
+            <a href="../..//assets/CV Fermin Robilotte.pdf" target="_blank">
+                <span>Descargar CV</span>
+                <i class="fas fa-download"></i>
+            </a>
+            <h2>Habilidades a destacar</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum corporis optio officia quis, 
+                libero eius id animi eum adipisci iste itaque unde maxime reiciendis facere totam impedit voluptatem omnis velit?</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li>Poseo habilidades y facilidad para trabajar en grupo.</li>
+                <li>Proactivo.</li>
+                <li>Facilidad para liderar grupos.</li>
+                <li>Conocimientos en metodologías ágiles para el desarrollo de software.</li>
+                <li>Ingles avanzado</li>
+            </ul>
+        </div>
+    </div>
   </div>
 
-  <div class="github" [ngClass]="{'inactive' : informationValue !== 6}">
+  <div class="github" [ngClass]="{'inactive' : informationValue !== 6, 'github' : informationValue === 6}">
       <span> github funciona</span>
   </div>
 </div>

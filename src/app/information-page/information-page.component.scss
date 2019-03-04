@@ -7,4 +7,96 @@
     .inactive{
         display: none;
     }
+
+    .profile{
+        height: auto;
+        min-height: 100vh;
+        opacity: 1;
+        pointer-events: auto;
+        transition: opacity .6s;
+        display: block;
+        padding: 105px 60px 80px 60px;
+        align-items: center;
+        justify-content: center;
+
+        &-content{
+            width: 920px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .header{
+            margin-bottom: 46px;
+
+            a{
+                text-transform: uppercase;
+                margin-bottom: 14px;
+                outline: 0;
+                color: #1dbe6f;
+                text-decoration: none;
+                display: inline-block;
+
+                i{
+                    margin-left: 10px;
+                }
+            }
+
+            h2{
+                font-size: 54px;
+                font-weight: 400;
+                text-transform: uppercase;
+                position: relative;
+                margin:0px 0px 50px 0px;
+                color: #000;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -30px;
+                    width: 30px;
+                    height: 7px;
+                    background-color: #d6d6d6;
+                }
+            }
+
+            p{
+                font-size: 26px;
+                line-height: 1.2;
+                font-weight: 300;
+                color: #5c5c5c;
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .list{
+                
+            ul{
+                list-style: none;
+
+                li{
+                    font-size: 18px;
+                    font-weight: 400;
+                    font-family: 'Open Sans',sans-serif;
+                    color: #000;
+                    border-bottom: 1px solid #efefef;
+                    text-align: left;
+                    padding: 14px 0;
+                    padding-left: 35px;
+                    position: relative;
+                    line-height: 20px;
+                }
+                li::after{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 8px;
+                    height: 8px;
+                    background: #1dbe6f;
+                    top: 20px;
+                }
+            }
+        }
+    }
 }
