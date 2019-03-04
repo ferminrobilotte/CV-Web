@@ -7,13 +7,12 @@
                 <i class="fas fa-download"></i>
             </a>
             <h2>Perfil</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum corporis optio officia quis, 
-                libero eius id animi eum adipisci iste itaque unde maxime reiciendis facere totam impedit voluptatem omnis velit?</p>
+            <p>Informacion basica y de contacto</p>
         </div>
         <div class="list">
             <ul>
                 <li>DNI: 38531662</li>
-                <li>Fecha de nacimiento: 12/11/1995. 22 años.</li>
+                <li>Fecha de nacimiento: 12/11/1995. 23 años.</li>
                 <li>Nacionalidad: Argentina</li>
                 <li>Número de teléfono: 2923-429900</li>
                 <li>Email: ferrobilotte@gmail.com</li>
@@ -32,8 +31,7 @@
                 <i class="fas fa-download"></i>
             </a>
             <h2>Tecnologias</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum corporis optio officia quis, 
-                libero eius id animi eum adipisci iste itaque unde maxime reiciendis facere totam impedit voluptatem omnis velit?</p>
+            <p>Lenguajes de programacion, y frameworks en los que tengo conocimiento. Cuales son los que utilizo actualmente</p>
         </div>
         <div class="list">
             <ul>
@@ -55,8 +53,7 @@
                 <i class="fas fa-download"></i>
             </a>
             <h2>Experiencia</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum corporis optio officia quis, 
-                libero eius id animi eum adipisci iste itaque unde maxime reiciendis facere totam impedit voluptatem omnis velit?</p>
+            <p>Experiencia laboral. Empresas donde he trabajado y que puesto he desempeñado</p>
         </div>
         <div class="list">
             <ul>
@@ -75,8 +72,7 @@
                 <i class="fas fa-download"></i>
             </a>
             <h2>Educacion</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum corporis optio officia quis, 
-                libero eius id animi eum adipisci iste itaque unde maxime reiciendis facere totam impedit voluptatem omnis velit?</p>
+            <p>Formacion academica recibida y actualmente en curso</p>
         </div>
         <div class="list">
             <ul>
@@ -95,8 +91,7 @@
                 <i class="fas fa-download"></i>
             </a>
             <h2>Habilidades a destacar</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum corporis optio officia quis, 
-                libero eius id animi eum adipisci iste itaque unde maxime reiciendis facere totam impedit voluptatem omnis velit?</p>
+            <p>Habilidades principales sobre mi forma de desarrollarme en un ambiente profesional. Idiomas que hablo</p>
         </div>
         <div class="list">
             <ul>
@@ -110,7 +105,21 @@
     </div>
   </div>
 
-  <div class="github" [ngClass]="{'inactive' : informationValue !== 6, 'github' : informationValue === 6}">
-      <span> github funciona</span>
+  <div [ngClass]="{'inactive' : informationValue !== 6, 'profile' : informationValue === 6}">
+    <div class="profile-content">
+        <div class="header">
+            <a href="../..//assets/CV Fermin Robilotte.pdf" target="_blank">
+                <span>Descargar CV</span>
+                <i class="fas fa-download"></i>
+            </a>
+            <h2>GitHub</h2>
+            <p>Listado con mis repositorios en mi cuenta de GitHub.</p>
+        </div>
+        <div class="list">
+            <ul *ngFor='let repo of repos'>
+                <li>{{repo.name}} - {{repo.description}} - <a href="{{repo.html_url}}" target="_blank">Link</a> </li>
+            </ul>
+        </div>
+    </div>
   </div>
 </div>

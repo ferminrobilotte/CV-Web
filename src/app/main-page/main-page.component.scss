@@ -17,7 +17,7 @@
         &-top{
 
             height: 50vh;
-            border-bottom: 1px solid #ebebeb;
+            border-bottom: 1px solid #d8d8d8;
             display: flex;
             align-items: center;
             width: 100%;
@@ -64,7 +64,7 @@
 
                     h1{
                         font-size: 40px;
-                        color: #1dbe6f;
+                        color: #7846AA;
                         font-weight: 400;
                         letter-spacing: 1px;
                         position: relative;
@@ -94,7 +94,7 @@
                             height: 7px;
                             width: 30px;
                             position: relative;
-                            background: #d6d6d6;
+                            background: #afafaf;
                             margin-top: 15px;
                             margin-bottom: 20px;
                         }
@@ -104,7 +104,7 @@
 
                         a{
                             font-size: 20px;
-                            color: #b3b3b3;
+                            color: #9a9a9a;
                             text-transform: uppercase;
                             display: inline-block;
                             overflow: hidden;
@@ -129,7 +129,7 @@
                             }
 
                             &:hover{
-                                color: #1dbe6f;
+                                color: #7846AA;
                                 transition: all .8s;
                             }
                         }
@@ -182,6 +182,7 @@
                             font-weight: 400;
                             display: inline;
                             text-transform: uppercase;
+                            color: black;
                         }
 
                         i{
@@ -195,7 +196,7 @@
                             height: 7px;
                             width: 30px;
                             position: relative;
-                            background: #d6d6d6;
+                            background: #afafaf;
                             margin-top: 15px;
                         }
 
@@ -247,7 +248,7 @@
                         .flex-content{
 
                             i{
-                                color: #1dbe6f;
+                                color: #7846AA;
                                 transition: all .8s;
 
                             }
@@ -257,11 +258,11 @@
                                 &::before{
                                     width: 27px;
                                     transition: all .3s;
-                                    background: #1dbe6f;
+                                    background: #7846AA;
                                     left: 4px;
                                 }
                                 &::after{
-                                    border-left: 10px solid #1dbe6f;
+                                    border-left: 10px solid #7846AA;
                                     left: 30px;
                                     transition: all .3s;
                                 }
@@ -283,7 +284,7 @@
             }
 
             .cards-container::after, .cards-container::before{
-                background-color: #ebebeb;
+                background-color: #d8d8d8;
                 width: 1px;
                 height: calc(50vh + 1px);
                 bottom: 0;
