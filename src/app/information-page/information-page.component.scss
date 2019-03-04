@@ -1,0 +1,10 @@
+.main{
+    height: 100%;
+    position: relative;
+    z-index: 50;
+    margin-left: 100px;
+
+    .inactive{
+        display: none;
+    }
+}

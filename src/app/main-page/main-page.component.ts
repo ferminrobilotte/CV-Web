@@ -9,14 +9,23 @@ import { ListService } from '../services/list/list.service';
 })
 export class MainPageComponent implements OnInit {
   id: number;
+  informationValue: number;
   subscription: Subscription;
+
   constructor(private listService : ListService) { }
 
   ngOnInit() {
     this.id = 1;
+    this.informationValue = 1;
+    
     this.subscription = this.listService.idChange.subscribe(id =>{
       this.id = id
     })
+  }
+
+  getInformationValue(value){
+    this.informationValue = value;
+    this.listService.getValueInformation(value);
   }
 
 }

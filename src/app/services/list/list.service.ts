@@ -6,11 +6,17 @@ import { Observable, Subject } from 'rxjs';
 })
 export class ListService {
   id : number;
+  value : number;
+  valueChange : Subject<number> = new Subject<number>();
   idChange : Subject<number> = new Subject<number>();
   constructor() { }
 
   getId(id) {
     this.id = id;
     this.idChange.next(this.id)
+  }
+
+  getValueInformation(value){
+    this.value = value;
   }
 }

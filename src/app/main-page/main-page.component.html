@@ -1,4 +1,3 @@
-
 <div class="main">
   <div class="home">
     <div class="home-top">
@@ -25,7 +24,7 @@
     </div>
     <div class="home-bottom">
       <div class="cards-container">
-        <a [ngClass]="{'card': id === 1, 'inactive' : id !== 1}">
+        <a [ngClass]="{'card': id === 1, 'inactive' : id !== 1}" (click)="getInformationValue(value=1)" routerLink="/information-page">
           <div class="flex-content">
               <i class="fas fa-user"></i>
               <h2 class="tittle">Perfil</h2>
@@ -35,17 +34,17 @@
                  excepturi ratione enim rem illum quae totam amet sunt! Hic, perferendis.</p>
           </div>
         </a>
-        <a [ngClass]="{'card': id === 1, 'inactive' : id !== 1}">
+        <a [ngClass]="{'card': id === 1, 'inactive' : id !== 1}" (click)="getInformationValue(value=2)" routerLink="/information-page">
           <div class="flex-content">
-              <i class="fas fa-user-graduate"></i>
-              <h2 class="tittle">Educacion</h2>
+              <i class="fas fa-code"></i>
+              <h2 class="tittle">Tecnologias</h2>
               <span class="arrow"></span>
               <div class="loader"></div>
               <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem illo cupiditate eius est dolores aliquam quas, nulla ad molestias,
                  excepturi ratione enim rem illum quae totam amet sunt! Hic, perferendis.</p>
           </div>
         </a>
-        <a [ngClass]="{'card': id === 1, 'inactive' : id !== 1}">
+        <a [ngClass]="{'card': id === 1, 'inactive' : id !== 1}" (click)="getInformationValue(value=3)" routerLink="/information-page">
           <div class="flex-content">
               <i class="fas fa-user-tie"></i>
               <h2 class="tittle">Experiencia laboral</h2>
@@ -55,9 +54,9 @@
                  excepturi ratione enim rem illum quae totam amet sunt! Hic, perferendis.</p>
           </div>
         </a>
-        <a [ngClass]="{'card': id === 2, 'inactive' : id !== 2}">
+        <a [ngClass]="{'card': id === 2, 'inactive' : id !== 2}" (click)="getInformationValue(value=4)" routerLink="/information-page">
             <div class="flex-content">
-                <i class="fas fa-user-tie"></i>
+                <i class="fas fa-list-ol"></i>
                 <h2 class="tittle">Habilidades a destacar</h2>
                 <span class="arrow"></span>
                 <div class="loader"></div>
@@ -65,19 +64,19 @@
                    excepturi ratione enim rem illum quae totam amet sunt! Hic, perferendis.</p>
             </div>
           </a>
-          <a [ngClass]="{'card': id === 2, 'inactive' : id !== 2}">
+          <a [ngClass]="{'card': id === 2, 'inactive' : id !== 2}" (click)="getInformationValue(value=5)" routerLink="/information-page">
               <div class="flex-content">
-                  <i class="fas fa-user-tie"></i>
-                  <h2 class="tittle">Tecnologias y frameworks</h2>
+                  <i class="fas fa-user-graduate"></i>
+                  <h2 class="tittle">Educacion</h2>
                   <span class="arrow"></span>
                   <div class="loader"></div>
                   <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem illo cupiditate eius est dolores aliquam quas, nulla ad molestias,
                      excepturi ratione enim rem illum quae totam amet sunt! Hic, perferendis.</p>
               </div>
             </a>
-            <a [ngClass]="{'card': id === 2, 'inactive' : id !== 2}">
+            <a [ngClass]="{'card': id === 2, 'inactive' : id !== 2}" (click)="getInformationValue(value=6)" routerLink="/information-page">
                 <div class="flex-content">
-                    <i class="fas fa-user-tie"></i>
+                    <i class="fab fa-github-square"></i>
                     <h2 class="tittle">Github</h2>
                     <span class="arrow"></span>
                     <div class="loader"></div>
