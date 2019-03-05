@@ -16,8 +16,7 @@ export class SidebarComponent implements OnInit {
     this.addClass(this.id);
   }
 
-  addClass(id: any) {
-    this.id = id;
+  addClass(id: number) {
     this.listService.getId(id);
   }
 

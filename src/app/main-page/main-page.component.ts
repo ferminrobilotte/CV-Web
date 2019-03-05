@@ -15,7 +15,7 @@ export class MainPageComponent implements OnInit {
   constructor(private listService : ListService) { }
 
   ngOnInit() {
-    this.id = 1;
+    this.id = this.listService.id;
     this.informationValue = 1;
     
     this.subscription = this.listService.idChange.subscribe(id =>{
