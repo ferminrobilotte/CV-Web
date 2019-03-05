@@ -7,7 +7,7 @@ import { ListService } from '../services/list/list.service';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-
+  
   id : number;
   constructor(private listService : ListService) { }
 

@@ -158,7 +158,8 @@
             .cards-container{
 
                 .inactive{
-                    display: none;
+                    visibility: hidden;
+                    opacity: 0;
                 }
 
                 .card{
@@ -167,6 +168,18 @@
                     padding: 70px 70px;
                     height: 50vh;
                     text-decoration: none;
+                    bottom: 0;
+                    position: absolute;
+                    visibility: visible;
+                    opacity: 1;
+                    transition-property: opacity,visibility,-webkit-transform;
+                    transition-property: opacity,visibility,transform;
+                    transition-property: opacity,visibility,transform,-webkit-transform;
+                    transition-duration: 2s;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transform-origin: left center;
+                    transform-origin: left center;
                     
                     .flex-content{
                         -webkit-transform-origin: 0 0;
@@ -270,6 +283,16 @@
                     }
                 }
 
+                .card1{
+                    left: 0;
+                }
+                .card2{
+                    left: 33.333%;
+                }
+                .card3{
+                    left: 66.666%;
+                }
+
                 
 
             }
@@ -370,6 +393,9 @@
 
                 .cards-container{
 
+                    .inactive{
+                        display: none;
+                    }
                     .card{
                         width: 100%;
                         position: relative;
